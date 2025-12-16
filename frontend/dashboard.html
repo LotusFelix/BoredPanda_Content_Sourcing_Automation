@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Content Dashboard - BoredPanda</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Content Dashboard</h1>
+            <p>Top viral stories for your review</p>
+            <a href="/" class="btn-secondary">← Back to Search</a>
+        </header>
+
+        <div id="results" class="results-grid">
+            <!-- Story cards will be inserted here -->
+        </div>
+
+        <div id="noResults" style="display: none;" class="no-results">
+            <h2>No stories found</h2>
+            <p>Try different categories or sources</p>
+            <a href="/" class="btn-primary">Try Again</a>
+        </div>
+
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            <p>Loading results...</p>
+        </div>
+    </div>
+
+    <script src="/static/dashboard.js"></script>
+</body>
+
+</html>

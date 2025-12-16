@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BoredPanda Content Sourcing Automation</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🐼 BoredPanda Content Sourcing</h1>
+            <p>AI-powered viral story discovery</p>
+        </header>
+
+        <div class="form-card">
+            <h2>Select Content Parameters</h2>
+            
+            <div class="form-section">
+                <h3>📂 Categories</h3>
+                <div class="checkbox-grid" id="categories">
+                    <label><input type="checkbox" name="category" value="Funny"> Funny</label>
+                    <label><input type="checkbox" name="category" value="Animals"> Animals</label>
+                    <label><input type="checkbox" name="category" value="Relationships"> Relationships</label>
+                    <label><input type="checkbox"  name="category" value="Art & Design"> Art & Design</label>
+                    <label><input type="checkbox" name="category" value="Entertainment"> Entertainment</label>
+                    <label><input type="checkbox" name="category" value="Curiosities"> Curiosities</label>
+                    <label><input type="checkbox" name="category" value="Lifestyle"> Lifestyle</label>
+                    <label><input type="checkbox" name="category" value="Society"> Society</label>
+                    <label><input type="checkbox" name="category" value="Entertainment News"> Entertainment News</label>
+                    <label><input type="checkbox" name="category" value="Politics"> Politics</label>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>📱 Sources</h3>
+                <div class="checkbox-grid" id="sources">
+                    <label><input type="checkbox" name="source" value="TikTok"> 📱 TikTok</label>
+                    <label><input type="checkbox" name="source" value="Instagram"> 📷 Instagram</label>
+                    <label><input type="checkbox" name="source" value="Facebook"> 👥 Facebook</label>
+                    <label><input type="checkbox" name="source" value="Twitter"> 🐦 Twitter</label>
+                    <label><input type="checkbox" name="source" value="RSS"> 📰 RSS Feeds</label>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h3>📅 Timeframe</h3>
+                <div class="input-group">
+                    <label>Look back (days):</label>
+                    <input type="number" id="days" min="1" max="30" value="7">
+                </div>
+            </div>
+
+            <button id="startBtn" class="btn-primary">🚀 Start Scraping</button>
+
+            <div id="loading" class="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Scraping content... This may take 45-60 seconds</p>
+                <p id="statusText">Initializing...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
